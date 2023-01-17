@@ -10,42 +10,52 @@
       integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
       crossorigin="anonymous"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    
     <title>David Mendonça</title>
   </head>
+  
   <body id="home">
     <header class="hero">
       <div id="navbar" class="navbar top">
         <h1 class="logo">
-          <span class="text-primary"><i class="fas fa-book-open"></i> Curriculum</span
-          >Vitae
+          <span style='color:#28a745'>D</span
+          >M
         </h1>
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#skills" id="skillsBtn">Skills</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
           </ul>
         </nav>
       </div>
-
+   
       <div class="content">
         <h1>David Mendonça</h1>
         <p>Web Designer</p>
-        <a href="#skills" class="btn"
-          ><i class="fas fa-chevron-down"></i> Read More</a
-        >
-      </div>
-    </header>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary heartbeat" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="fas fa-book-open"></i>
+        </button>
 
-    <main>
-      <!-- skills: Icons -->
-      <section id="skills" class="icons bg-light">
-        <div class="section-header">
-          <h2>Skills</h2>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="images/David_Mendonça_CV – 1.png" alt="curriculum vitae">
+            </div>
+          </div>
         </div>
+      </div>    
+         <main>
+
+      <!-- skills: Icons -->
+      <section id="skills" class="icons">
         <div class="flex-items">
           <div>
             <iconify-icon icon="logos:adobe-xd" width="100"></iconify-icon>
@@ -73,133 +83,74 @@
           </div>
         </div>
       </section>
-
-      <!-- Portfolio -->
-      <section id="portfol" class="flex-columns">
-        <div class="row">
-          <div class="column">
-            <div class="column-2 bg-primary">
-              <h2>Habilitação literárias</h2>
-            <div>
-              <h4>016-018: TeSP Estratégias e Praticas de Internacionalização</h4>              
-              <p>
-                Apto a colaborar no departamento de comércio internacional, com competências 
-                específicas na área da negociação e gestão de vendas.
-              </p>
-            </div>  
-            <div>
-              <h4>019-020: Curso de Treinador de futebol nivel 1</h4>              
-              <p>
-                Apto para orientar, organizar e planear autonomamente treinos e jogos de futebol de equipas em escalões iniciais.
-              </p>
-            </div>
-            <div>
-              <h4>021-022: Web Designer</h4>              
-              <p>
-                Apto para desenvolver experiências relevantes para os negócios e interfaces visualmente apelativos, aliados a uma interatividade eficaz no envolvimento com o utilizador.
-              </p>
-            </div> 
-            <div>
-              <h4>Cursos Online <h4>              
-              <h5>Dropshipping Amazon (Udemy)</h5>  
-              <h5>Build modern responsive websites & UIs with HTML5, CSS3 & Sass (Udemy)
-              </h5>  
-              <h5>WordPress (Marketing Digital 360)
-              </h5>  
-            </div>  
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Cases -->
-      <section id="portfolio" class="cases flex-grid section-padding">
-        <div class="section-header">
-          <h2>Portfólio</h2>
-        </div>
-        <div class="row">
-          <div class="column">
-            <a
-              href="images/cases/cases1.png"
-              data-lightbox="cases"
-              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-              dolore!"
-            >
-              <img src="images/cases/cases1.png" alt="" />
-            </a>
-            <a
-              href="images/cases/cases2.png"
-              data-lightbox="cases"
-              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-              dolore!"
-            >
-              <img src="images/cases/cases2.png" alt="" />
-            </a>
-          </div>
-          <div class="column">
-            <a
-              href="images/cases/cases3.png"
-              data-lightbox="cases"
-              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-            dolore!"
-            >
-              <img src="images/cases/cases3.png" alt="" />
-            </a>
-            <a
-              href="images/cases/cases4.png"
-              data-lightbox="cases"
-              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-              dolore!"
-            >
-              <img src="images/cases/cases4.png" alt="" />
-            </a>
-          </div>
-          <div class="column">
-            <a
-              href="images/cases/cases5.png"
-              data-lightbox="cases"
-              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-            dolore!"
-            >
-              <img src="images/cases/cases5.png" alt="" />
-            </a>
-            <a
-              href="images/cases/cases6.png"
-              data-lightbox="cases"
-              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-              dolore!"
-            >
-              <img src="images/cases/cases6.png" alt="" />
-            </a>
-          </div>
-          <div class="column">
-            <a
-              href="images/cases/cases7.png"
-              data-lightbox="cases"
-              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-            dolore!"
-            >
-              <img src="images/cases/cases7.png" alt="" />
-            </a>
-            <a
-              href="images/cases/cases8.png"
-              data-lightbox="cases"
-              data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
-              dolore!"
-            >
-              <img src="images/cases/cases8.png" alt="" />
-            </a>
-          </div>
-        </div>
-      </section>
-
     </main>
+    <div class="caixa">
+      <div class="bubbles">
+          <span style="--i:12"></span>
+          <span style="--i:18"></span>
+          <span style="--i:17"></span>
+          <span style="--i:19"></span>
+          <span style="--i:15"></span>
+          <span style="--i:12"></span>
+          <span style="--i:29"></span>
+          <span style="--i:26"></span>
+          <span style="--i:11"></span>
+          <span style="--i:32"></span>
+          <span style="--i:21"></span>
+          <span style="--i:19"></span>
+          <span style="--i:16"></span>
+          <span style="--i:19"></span>
+          <span style="--i:18"></span>
+          <span style="--i:11"></span>
+          <span style="--i:12"></span>
+          <span style="--i:23"></span>
+          <span style="--i:21"></span>
+          <span style="--i:11"></span>
+          <span style="--i:16"></span>
+          <span style="--i:18"></span>
+          <span style="--i:25"></span>
+          <span style="--i:13"></span>
+          <span style="--i:29"></span>
+          <span style="--i:18"></span>
+          <span style="--i:11"></span>
+          <span style="--i:12"></span>
+          <span style="--i:23"></span>
+          <span style="--i:21"></span>
+          <span style="--i:11"></span>
+          <span style="--i:16"></span>
+          <span style="--i:18"></span>
+          <span style="--i:25"></span>
+          <span style="--i:13"></span>
+          <span style="--i:29"></span>
+          <span style="--i:18"></span>
+          <span style="--i:11"></span>
+          <span style="--i:12"></span>
+          <span style="--i:23"></span>
+          <span style="--i:21"></span>
+          <span style="--i:11"></span>
+          <span style="--i:16"></span>
+          <span style="--i:18"></span>
+          <span style="--i:25"></span>
+          <span style="--i:13"></span>
+          <span style="--i:29"></span>
+          <span style="--i:18"></span>
+          <span style="--i:11"></span>
+          <span style="--i:12"></span>
+          <span style="--i:23"></span>
+          <span style="--i:21"></span>
+          <span style="--i:11"></span>
+          <span style="--i:16"></span>
+          <span style="--i:18"></span>
+          <span style="--i:25"></span>
+          <span style="--i:13"></span>
+          <span style="--i:29"></span>
+      </div> 
+  </div>
+    </header>
 
-    <footer class="footer bg-dark">
-      <p>Copyright &copy; 2023 - David Mendonça</p>
-    </footer>
-
-    <script
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     <script
       src="https://code.jquery.com/jquery-3.5.0.min.js"
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
       crossorigin="anonymous"
@@ -243,5 +194,7 @@
         }
       });
     </script>
+
+<script src="js/main.js"></script>
   </body>
 </html>
