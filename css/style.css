@@ -111,7 +111,7 @@ h1, h2 {
 /* Header */
 .hero {
     background-color:#211E1E;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     color: #fff;
 }
@@ -235,16 +235,17 @@ h1, h2 {
 
 /* Icons */
 #skills {
+    padding: 20px;
     opacity: 0;
     position: relative;
-    top: 0px;
+    top: 1px;
     background-color: #211E1E;
     transition: ease 1s;
 }
 
 
 .icons {
-    padding: 30px;
+    padding: 10px;
 }
 
 .icons h3 {
